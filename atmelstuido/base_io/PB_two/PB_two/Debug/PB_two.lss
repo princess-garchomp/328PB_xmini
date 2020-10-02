@@ -1,0 +1,349 @@
+
+PB_two.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000244  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001f0  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000244  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000274  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000098  00000000  00000000  000002b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000d1a  00000000  00000000  0000034c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000a3f  00000000  00000000  00001066  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000004d3  00000000  00000000  00001aa5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000f8  00000000  00000000  00001f78  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000058c  00000000  00000000  00002070  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000d0  00000000  00000000  000025fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000078  00000000  00000000  000026cc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 62 00 	jmp	0xc4	; 0xc4 <__ctors_end>
+   4:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+   8:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+   c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  10:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  14:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  18:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  1c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  20:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  24:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  28:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  2c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  30:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  34:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  38:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  3c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  40:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  44:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  48:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  4c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  50:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  54:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  58:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  5c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  60:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  64:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  68:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  6c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  70:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  74:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  78:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  7c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  80:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  84:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  88:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  8c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  90:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  94:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  98:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  9c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a0:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a4:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a8:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  ac:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  b0:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  b4:	86 00       	.word	0x0086	; ????
+  b6:	8d 00       	.word	0x008d	; ????
+  b8:	94 00       	.word	0x0094	; ????
+  ba:	9b 00       	.word	0x009b	; ????
+  bc:	a2 00       	.word	0x00a2	; ????
+  be:	a9 00       	.word	0x00a9	; ????
+  c0:	b0 00       	.word	0x00b0	; ????
+  c2:	b7 00       	.word	0x00b7	; ????
+
+000000c4 <__ctors_end>:
+  c4:	11 24       	eor	r1, r1
+  c6:	1f be       	out	0x3f, r1	; 63
+  c8:	cf ef       	ldi	r28, 0xFF	; 255
+  ca:	d8 e0       	ldi	r29, 0x08	; 8
+  cc:	de bf       	out	0x3e, r29	; 62
+  ce:	cd bf       	out	0x3d, r28	; 61
+  d0:	0e 94 d1 00 	call	0x1a2	; 0x1a2 <main>
+  d4:	0c 94 f6 00 	jmp	0x1ec	; 0x1ec <_exit>
+
+000000d8 <__bad_interrupt>:
+  d8:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000dc <first_rgb_led_red_on>:
+_Bool button_is_not_pressed(){
+	return!(button_is_pressed());
+}
+
+static void first_rgb_led_red_on(){
+	PORTC|= MASK(FIRST_RGB_LED_RED_SHIFT);
+  dc:	43 9a       	sbi	0x08, 3	; 8
+  de:	08 95       	ret
+
+000000e0 <first_rgb_led_red_off>:
+}
+static void first_rgb_led_red_off(){
+	PORTC &= ~MASK(FIRST_RGB_LED_RED_SHIFT);
+  e0:	43 98       	cbi	0x08, 3	; 8
+  e2:	08 95       	ret
+
+000000e4 <first_rgb_led_green_on>:
+}
+static void first_rgb_led_green_on(){
+	PORTC |= MASK(FIRST_RGB_LED_GREEN_SHIFT);
+  e4:	44 9a       	sbi	0x08, 4	; 8
+  e6:	08 95       	ret
+
+000000e8 <first_rgb_led_green_off>:
+}
+static void first_rgb_led_green_off(){
+	PORTC &= ~MASK(FIRST_RGB_LED_GREEN_SHIFT);
+  e8:	44 98       	cbi	0x08, 4	; 8
+  ea:	08 95       	ret
+
+000000ec <first_rgb_led_blue_on>:
+}
+static void first_rgb_led_blue_on(){
+	PORTC |= MASK(FIRST_RGB_LED_BLUE_SHIFT);
+  ec:	45 9a       	sbi	0x08, 5	; 8
+  ee:	08 95       	ret
+
+000000f0 <first_rgb_led_blue_off>:
+}
+static void first_rgb_led_blue_off(){
+	PORTC &= ~MASK(FIRST_RGB_LED_BLUE_SHIFT);
+  f0:	45 98       	cbi	0x08, 5	; 8
+  f2:	08 95       	ret
+
+000000f4 <button_config>:
+	DDRC |= MASK(FIRST_RGB_LED_RED_SHIFT)|MASK(FIRST_RGB_LED_GREEN_SHIFT)|MASK(FIRST_RGB_LED_BLUE_SHIFT);
+	first_rgb_led_color(WHITE);
+}
+
+void button_config(){
+	DDRC &= ~(MASK(BUTTON_SHIFT));
+  f4:	3a 98       	cbi	0x07, 2	; 7
+	PORTC|= MASK(BUTTON_SHIFT);
+  f6:	42 9a       	sbi	0x08, 2	; 8
+  f8:	08 95       	ret
+
+000000fa <first_rgb_led_color>:
+}
+
+
+void first_rgb_led_color(rgb_led_color color){
+	switch(color){
+  fa:	90 e0       	ldi	r25, 0x00	; 0
+  fc:	88 30       	cpi	r24, 0x08	; 8
+  fe:	91 05       	cpc	r25, r1
+ 100:	e0 f5       	brcc	.+120    	; 0x17a <first_rgb_led_color+0x80>
+ 102:	fc 01       	movw	r30, r24
+ 104:	e6 5a       	subi	r30, 0xA6	; 166
+ 106:	ff 4f       	sbci	r31, 0xFF	; 255
+ 108:	0c 94 f0 00 	jmp	0x1e0	; 0x1e0 <__tablejump2__>
+		case(WHITE):
+			first_rgb_led_red_off();
+ 10c:	0e 94 70 00 	call	0xe0	; 0xe0 <first_rgb_led_red_off>
+			first_rgb_led_green_off();
+ 110:	0e 94 74 00 	call	0xe8	; 0xe8 <first_rgb_led_green_off>
+			first_rgb_led_blue_off();
+ 114:	0e 94 78 00 	call	0xf0	; 0xf0 <first_rgb_led_blue_off>
+		break;		
+ 118:	08 95       	ret
+		case(BLUE):
+			first_rgb_led_red_off();
+ 11a:	0e 94 70 00 	call	0xe0	; 0xe0 <first_rgb_led_red_off>
+			first_rgb_led_green_off();
+ 11e:	0e 94 74 00 	call	0xe8	; 0xe8 <first_rgb_led_green_off>
+			first_rgb_led_blue_on();
+ 122:	0e 94 76 00 	call	0xec	; 0xec <first_rgb_led_blue_on>
+		break;		
+ 126:	08 95       	ret
+		case(GREEN):
+			first_rgb_led_red_off();
+ 128:	0e 94 70 00 	call	0xe0	; 0xe0 <first_rgb_led_red_off>
+			first_rgb_led_green_on();
+ 12c:	0e 94 72 00 	call	0xe4	; 0xe4 <first_rgb_led_green_on>
+			first_rgb_led_blue_off();
+ 130:	0e 94 78 00 	call	0xf0	; 0xf0 <first_rgb_led_blue_off>
+		break;		
+ 134:	08 95       	ret
+		case(CYAN):
+			first_rgb_led_red_off();
+ 136:	0e 94 70 00 	call	0xe0	; 0xe0 <first_rgb_led_red_off>
+			first_rgb_led_green_on();
+ 13a:	0e 94 72 00 	call	0xe4	; 0xe4 <first_rgb_led_green_on>
+			first_rgb_led_blue_on();
+ 13e:	0e 94 76 00 	call	0xec	; 0xec <first_rgb_led_blue_on>
+		break;		
+ 142:	08 95       	ret
+		case(RED):
+			first_rgb_led_red_on();
+ 144:	0e 94 6e 00 	call	0xdc	; 0xdc <first_rgb_led_red_on>
+			first_rgb_led_green_off();
+ 148:	0e 94 74 00 	call	0xe8	; 0xe8 <first_rgb_led_green_off>
+			first_rgb_led_blue_off();
+ 14c:	0e 94 78 00 	call	0xf0	; 0xf0 <first_rgb_led_blue_off>
+		break;
+ 150:	08 95       	ret
+		case(MAGENTA):
+			first_rgb_led_red_on();
+ 152:	0e 94 6e 00 	call	0xdc	; 0xdc <first_rgb_led_red_on>
+			first_rgb_led_green_off();
+ 156:	0e 94 74 00 	call	0xe8	; 0xe8 <first_rgb_led_green_off>
+			first_rgb_led_blue_on();
+ 15a:	0e 94 76 00 	call	0xec	; 0xec <first_rgb_led_blue_on>
+		break;		
+ 15e:	08 95       	ret
+		case(YELLOW):
+			first_rgb_led_red_on();
+ 160:	0e 94 6e 00 	call	0xdc	; 0xdc <first_rgb_led_red_on>
+			first_rgb_led_green_on();
+ 164:	0e 94 72 00 	call	0xe4	; 0xe4 <first_rgb_led_green_on>
+			first_rgb_led_blue_off();
+ 168:	0e 94 78 00 	call	0xf0	; 0xf0 <first_rgb_led_blue_off>
+		break;	
+ 16c:	08 95       	ret
+		case(BLACK):
+			first_rgb_led_red_on();
+ 16e:	0e 94 6e 00 	call	0xdc	; 0xdc <first_rgb_led_red_on>
+			first_rgb_led_green_on();
+ 172:	0e 94 72 00 	call	0xe4	; 0xe4 <first_rgb_led_green_on>
+			first_rgb_led_blue_on();
+ 176:	0e 94 76 00 	call	0xec	; 0xec <first_rgb_led_blue_on>
+ 17a:	08 95       	ret
+
+0000017c <first_rgb_led_config>:
+void all_I_O_config(){
+	first_rgb_led_config();
+	button_config();
+}
+void first_rgb_led_config(){
+	DDRC |= MASK(FIRST_RGB_LED_RED_SHIFT)|MASK(FIRST_RGB_LED_GREEN_SHIFT)|MASK(FIRST_RGB_LED_BLUE_SHIFT);
+ 17c:	87 b1       	in	r24, 0x07	; 7
+ 17e:	88 63       	ori	r24, 0x38	; 56
+ 180:	87 b9       	out	0x07, r24	; 7
+	first_rgb_led_color(WHITE);
+ 182:	80 e0       	ldi	r24, 0x00	; 0
+ 184:	0e 94 7d 00 	call	0xfa	; 0xfa <first_rgb_led_color>
+ 188:	08 95       	ret
+
+0000018a <all_I_O_config>:
+static void first_rgb_led_blue_off();
+
+
+
+void all_I_O_config(){
+	first_rgb_led_config();
+ 18a:	0e 94 be 00 	call	0x17c	; 0x17c <first_rgb_led_config>
+	button_config();
+ 18e:	0e 94 7a 00 	call	0xf4	; 0xf4 <button_config>
+ 192:	08 95       	ret
+
+00000194 <button_is_pressed>:
+	}
+}
+
+
+_Bool button_is_pressed(){
+	return!(PINC & MASK(BUTTON_SHIFT));
+ 194:	86 b1       	in	r24, 0x06	; 6
+ 196:	82 fb       	bst	r24, 2
+ 198:	88 27       	eor	r24, r24
+ 19a:	80 f9       	bld	r24, 0
+}
+ 19c:	91 e0       	ldi	r25, 0x01	; 1
+ 19e:	89 27       	eor	r24, r25
+ 1a0:	08 95       	ret
+
+000001a2 <main>:
+	}
+}*/
+
+int main(void)
+{
+	all_I_O_config();
+ 1a2:	0e 94 c5 00 	call	0x18a	; 0x18a <all_I_O_config>
+	DDRC |= (1ul<<PC5);    // Direction of pin PB5 set as Output
+ 1a6:	3d 9a       	sbi	0x07, 5	; 7
+	while (1)
+	{
+		if((!(PINB & (1ul<<PINB7)))&&button_is_pressed())
+ 1a8:	1f 99       	sbic	0x03, 7	; 3
+ 1aa:	08 c0       	rjmp	.+16     	; 0x1bc <main+0x1a>
+ 1ac:	0e 94 ca 00 	call	0x194	; 0x194 <button_is_pressed>
+ 1b0:	88 23       	and	r24, r24
+ 1b2:	21 f0       	breq	.+8      	; 0x1bc <main+0x1a>
+		{
+			first_rgb_led_color(BLUE); 
+ 1b4:	81 e0       	ldi	r24, 0x01	; 1
+ 1b6:	0e 94 7d 00 	call	0xfa	; 0xfa <first_rgb_led_color>
+ 1ba:	f6 cf       	rjmp	.-20     	; 0x1a8 <main+0x6>
+		}
+		else if(button_is_pressed())
+ 1bc:	0e 94 ca 00 	call	0x194	; 0x194 <button_is_pressed>
+ 1c0:	88 23       	and	r24, r24
+ 1c2:	21 f0       	breq	.+8      	; 0x1cc <main+0x2a>
+		{
+			first_rgb_led_color(RED);
+ 1c4:	84 e0       	ldi	r24, 0x04	; 4
+ 1c6:	0e 94 7d 00 	call	0xfa	; 0xfa <first_rgb_led_color>
+ 1ca:	ee cf       	rjmp	.-36     	; 0x1a8 <main+0x6>
+		}
+		else if (!(PINB & (1ul<<PINB7)))    //read PIN PB7
+ 1cc:	1f 99       	sbic	0x03, 7	; 3
+ 1ce:	04 c0       	rjmp	.+8      	; 0x1d8 <main+0x36>
+		{
+			first_rgb_led_color(GREEN);
+ 1d0:	82 e0       	ldi	r24, 0x02	; 2
+ 1d2:	0e 94 7d 00 	call	0xfa	; 0xfa <first_rgb_led_color>
+ 1d6:	e8 cf       	rjmp	.-48     	; 0x1a8 <main+0x6>
+		}
+		else
+		{
+			first_rgb_led_color(WHITE);
+ 1d8:	80 e0       	ldi	r24, 0x00	; 0
+ 1da:	0e 94 7d 00 	call	0xfa	; 0xfa <first_rgb_led_color>
+ 1de:	e4 cf       	rjmp	.-56     	; 0x1a8 <main+0x6>
+
+000001e0 <__tablejump2__>:
+ 1e0:	ee 0f       	add	r30, r30
+ 1e2:	ff 1f       	adc	r31, r31
+ 1e4:	05 90       	lpm	r0, Z+
+ 1e6:	f4 91       	lpm	r31, Z
+ 1e8:	e0 2d       	mov	r30, r0
+ 1ea:	09 94       	ijmp
+
+000001ec <_exit>:
+ 1ec:	f8 94       	cli
+
+000001ee <__stop_program>:
+ 1ee:	ff cf       	rjmp	.-2      	; 0x1ee <__stop_program>
